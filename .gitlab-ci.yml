@@ -1,0 +1,13 @@
+---
+stages:
+  - web
+build-and-push-web:
+  stage: web
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  script:
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+    - export NAME=web
+    - export DOCKERFILE=Dockerfile
+    - $CI_PROJECT_DIR/bin/build-and-push.sh
