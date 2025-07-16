@@ -3,3 +3,10 @@
 @theme {
     --color-primary: #5A61DF;
 }
+
+.hide-arrows[type="number"]::-webkit-inner-spin-button,
+.hide-arrows[type="number"]::-webkit-outer-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: textfield !important;
+}
