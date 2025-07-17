@@ -144,7 +144,7 @@
             </button>
         {:else}
             <button
-                class="w-full bg-blue-500 color-white text-lg text-center font-bold rounded-lg p-3 cursor-pointer"
+                class="w-full bg-primary color-white text-lg text-center font-bold rounded-lg p-3 cursor-pointer"
                 on:click={addToList}
             >
                 Add to list
