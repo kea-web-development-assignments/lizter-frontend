@@ -1,10 +1,15 @@
 export { default as Form } from './Form.svelte';
 export { default as UserForm } from './UserForm.svelte';
+export { default as ItemForm } from './ItemForm.svelte';
+export { default as Modal } from './Modal.svelte';
 export { default as ItemCard } from './ItemCard.svelte';
 export { default as ItemImage } from './ItemImage.svelte';
 export { default as SearchBar } from './SearchBar.svelte';
 export { default as InputField } from './InputField.svelte';
+export { default as TextAreaField } from './TextAreaField.svelte';
+export { default as SelectField } from './SelectField.svelte';
 export { default as MultiSelectField } from './MultiSelectField.svelte';
+export { default as ImagePicker } from './ImagePicker.svelte';
 export { default as SubmitButton } from './SubmitButton.svelte';
 export { default as Paginator } from './Paginator.svelte';
 export { default as PaginatorButton } from './PaginatorButton.svelte';

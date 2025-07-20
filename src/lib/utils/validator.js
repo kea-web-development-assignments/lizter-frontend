@@ -20,3 +20,18 @@ export const userValidation = {
         pattern: '^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#$%&*])[A-Za-z0-9!@#$%&*]{8,20}$',
     },
 };
+
+export const itemValidation = {
+    name: {
+        title: 'Name must be between 1-100 alphanumerical characters long, including dashes, parentheses, and colons',
+        pattern: '^[a-zA-Z0-9 :\\(\\)\\-]{1,100}$',
+    },
+    description: {
+        title: 'Description must be between 5-1000 characters long',
+        pattern: '^[\\s\\S]{5,1000}$',
+    },
+    releaseDate: {
+        title: 'Release date must be a valid date (dd-mm-yyyy)',
+        pattern: '^[0-9]{2}\\-[0-9]{2}\\-[0-9]{4}$',
+    },
+};
